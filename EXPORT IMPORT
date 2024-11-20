@@ -14,7 +14,7 @@ TARGET Schema : DI_REPO_BKP on IMTUAT
 On SOURCE:
 **********
 
-
+----------------------> Checking Dba directories <------------------=
  set lines 200
  set pages 200
  col OWNER for a20
