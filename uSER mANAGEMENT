@@ -1,0 +1,183 @@
+-- User Creation
+
+USER CREATION: NORMAL REQUEST 
+
+set lines 300 pages 300 long 9999
+col USERNAME for a25;
+Select name,open_mode,database_role from v$database;
+
+======================================================================================================================================
+---------------------->Checking user in DB <------------------
+set lines 300 pages 300 long 9999
+col USERNAME for a25
+select USERNAME,ACCOUNT_STATUS,EXPIRY_DATE,CREATED,DEFAULT_TABLESPACE from dba_users where USERNAME='VKARYAMPUDI';
+
+============================================================================================================================
+
+
+--------->Checking User assigned roles<---------------------
+select distinct GRANTED_ROLE from dba_role_privs where grantee='MBRANDENBU';
+
+GRANT APP_SUPPORT_READONLY to MBRANDENBU;
+===========================================================================================
+
+-----------------------> Checking Readonly roles in db<-----------
+
+select role from dba_roles where role like '%READONLY%';
+
+================================================================================================================
+
+
+------------- db up time-------------
+SELECT to_char(startup_time,'DD-MON-YYYY HH24:MI:SS') "DB Startup Time"
+FROM sys.v_$instance;
+
+==================================================================================================================
+
+
+----------------------------->cHECKING pROFILES IN db<---------------------
+
+
+select distinct profile from dba_profiles ;
+
+=======================================================================================================================
+
+--------------------------> uSER cREATION<-------------------------------
+
+CREATE USER MBRANDENBU IDENTIFIED BY DlmaFl8lth$21lRu9uNL DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP PROFILE USERS;
+
+GRANT  CREATE SESSION  to MBRANDENBU;  
+
+GRANT CONNECT, RESOURCE to ABPRADHAN;
+
+GRANT CREATE SEQUENCE  to DS_AUD_43SP1;  
+
+=========================================================================================================================
+
+
+
+
+
+select distinct GRANTED_ROLE from dba_role_privs where grantee='MBRANDENBU';
+select USERNAME,ACCOUNT_STATUS,EXPIRY_DATE,CREATED,profile from dba_users where USERNAME like '%MART_GFB';
+
+
+create table FCUBSPRD.abc (check_one varchar2(20));
+select profile,resource_name, limit from dba_profiles where profile = 'SVB_PRIVILEGED_SYSTEM';
+
+
+
+
+GRANT CREATE TABLE to DS_AUD_43SP1;  
+GRANT CREATE VIEW to DS_AUD_43SP1;
+GRANT CREATE PROCEDURE to DS_AUD_43SP1;
+
+
+select * from DBA_SYS_PRIVS where grantee = 'BKULKARN';
+
+
+
+conn FCUBSPRD/"?{Y}(:j$Z-O62%h3Z5A1#8#]"
+ 
+Detailed description: my SQL DB's are not connecting with given passwords
+
+  
+ select distinct GRANTED_ROLE from dba_role_privs where grantee='OCHADM';  
+ 
+ 
+ ALTER USER DS_SVIJAY QUOTA UNLIMITED ON USERS;
+
+
+
+
+GRANT EDW_RESTRICTED_PII_ACCT_CIF  to SATGAJENDRAN;  
+
+GRANT EDW_REF_DATA_RDONLYRL  to SATGAJENDRAN;  
+
+GRANT EDW_RESTRICTED_PII_NAME_ADDR to DG;  
+
+
+grant select on GWDMG.MIG_IPAY_PAYLOAD to APP_SUPPORT_READONLY;
+grant select on GWDMG.MIG_SRC_TEMPLATE_DELTA to APP_SUPPORT_READONLY;
+
+
+grant select on GWDMG.MIG_IPAY_PAYLOAD to APP_SUPPORT_READONLY
+
+
+grant select on gwdmg.MIG_SRC_ACH_POSPAY_DEBIT to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_ACH_POSPAY_CREDIT to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_ACH_POSPAY_CREDIT_APPROVAL_SETTING to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_ACH_POSPAY_DEBIT_APPROVAL_SETTING to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_POSPAY_ACCOUNT_ENTITLEMENT to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_POSPAY_ACCOUNT_USER_PERMISSIONS to APP_SUPPORT_READONLY;
+
+grant select on gwdmg.MIG_SRC_POSPAY_ACCOUNT_ACCESS_PROCHEX to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_POSPAY_ACCOUNTSINFO to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_POSPAY_CLIENT_CONFIGURATION_INFO to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_POSPAY_CLIENT_USER_ACCESS_RIGHTS to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_POSPAY_CLIENT_USERS to APP_SUPPORT_READONLY;
+grant select on gwdmg.MIG_SRC_POSPAY_CLIENTS to APP_SUPPORT_READONLY;
+
+
+
+grant select any table, insert any table, update any table to SVC_GWRERPORTCENTER; 
+ 
+ 
+GRANT CREATE VIEW TO SSYED;
+grant select any table to BJG;
+
+select role from dba_roles where role like '%READONLY%';
+GRANT EDW_RESTRICTED_PII_ACCT_CIF to ASEPENU;  
+
+
+
+GRANT APP_SUPPORT_READONLY to MCANTRIEL;  
+
+
+grant EDW_US_RDONLYRL to EDWETL_FDIC_READONLY;
+
+
+
+
+
+desc 
+Grant select on SVBDBA.TRAN_TEXT to SVC_KAFKA_GFX 
+ 
+ EDW_ALL_RDONLYRL
+EDW_ALL_REGION_RDONLYRL
+EDW_RESTRICTED_PII_ACCT_CIF
+EDW_RESTRICTED_PII_ACCT_CIF 
+EDW_ALL_REGION_RDONLYRL 
+
+
+
+
+
+GRANT CONNECT, RESOURCE to OPARIDA;
+GRANT APP_SUPPORT_READONLY to RAJRANJA;
+--fOR EDW CREATION 
+
+set lines 300 pages 300 long 9999
+col USERNAME for a25;
+Select name,open_mode,database_role from v$database;
+
+set lines 300 pages 300 long 9999
+col USERNAME for a25;
+select USERNAME,ACCOUNT_STATUS,EXPIRY_DATE,CREATED from dba_users where USERNAME='CHA';
+
+CREATE USER CHA IDENTIFIED BY ***************** DEFAULT TABLESPACE USERS TEMPORARY TABLESPACE TEMP PROFILE USERS;
+
+GRANT CREATE SESSION TO CHA;
+GRANT EDW_ALL_REGION_RDONLYRL,EDW_ALL_RDONLYRL to LMATHEWPAUL;
+GRANT CONNECT, RESOURCE to OPARIDA;
+
+
+
+
+
+set lines 300 pages 300 long 9999 
+col USERNAME for a25; 
+select USERNAME,ACCOUNT_STATUS,EXPIRY_DATE,CREATED from dba_users where USERNAME='EMUTHUSA'; 
+
+
+set long 100000 
